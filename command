@@ -15,3 +15,6 @@ return 'input number is '.$id; /// single quote is string
 <? echo $id; ?> = {{ $id }}
 
 Route::get('view name','contrallerName@methodname')->name('[name]'); //must put upper route::resource
+
+
+view('foiderName'.'fileName');
