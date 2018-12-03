@@ -1,3 +1,5 @@
+/**command terminal*//
+
 php artisan serve
 
 php artisan route:list
@@ -6,6 +8,8 @@ php artisan make:controller [name]
 php artisan make:controller [name] --resource 
 
 --------------------------------------------------------------------------
+/**route to controller & views to controller*//
+
 route::resource('[name]','[name file controller]');
 
 
@@ -18,3 +22,18 @@ Route::get('view name','contrallerName@methodname')->name('[name]'); //must put 
 
 
 view('foiderName'.'fileName');
+
+--------------------------------------------------------------------------
+/**Send data to veiw*//
+
+/.controller
+$data['name']="Alice";
+return view('welcome',$data);
+//return view('welcome')->with('name','Alice');
+
+/.views
+{{$name}}
+--------------------------------------
+/**config model connect to database*//
+
+php artisan migrate --force
