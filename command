@@ -36,4 +36,15 @@ return view('welcome',$data);
 --------------------------------------
 /**config model connect to database*//
 
-php artisan migrate --force
+php artisan migrate 
+
+/.AppServiceProvider
+use Illuminate\Support\Facades\Schema;
+public function boot()
+    {
+        Schema::defaultStringLength(191);
+    }
+    
+//edit initialize database in .env
+//;extension=pdo_mysql.dll
+
