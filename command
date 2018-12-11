@@ -48,3 +48,7 @@ public function boot()
 //edit initialize database in .env
 //;extension=pdo_mysql.dll
 
+-------------------------------------------
+/**login*//
+php artisan make:auth
+
