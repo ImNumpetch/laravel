@@ -51,4 +51,4 @@ public function boot()
 -------------------------------------------
 /**login*//
 php artisan make:auth
-
+php artisan migrate:force
